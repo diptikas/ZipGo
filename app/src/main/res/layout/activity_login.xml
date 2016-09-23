@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_margin="@dimen/dimens_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_50"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/dimens_20"
+        android:layout_gravity="center"
+        android:textColor="@color/com_facebook_blue"
+        android:text="@string/info_heading"/>
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50">
+
+    <TextView
+        android:id="@+id/name_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:textSize="@dimen/dimens_16"
+        android:textColor="@android:color/darker_gray"
+        android:text="Username : "/>
+
+    <TextView
+        android:id="@+id/u_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/name_heading"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:textSize="@dimen/dimens_16"
+        android:textColor="@android:color/black"
+        android:text=""/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50">
+
+        <TextView
+            android:id="@+id/gender_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/dimens_16"
+            android:textColor="@android:color/darker_gray"
+            android:text="Gender : "/>
+
+        <TextView
+            android:id="@+id/u_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/gender_heading"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/dimens_16"
+            android:textColor="@android:color/black"
+            android:text=""/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50">
+
+        <TextView
+            android:id="@+id/email_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/dimens_16"
+            android:textColor="@android:color/darker_gray"
+            android:text="Email : "/>
+
+        <TextView
+            android:id="@+id/u_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/email_heading"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/dimens_16"
+            android:textColor="@android:color/black"
+            android:text=""/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50">
+
+        <TextView
+            android:id="@+id/id_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/dimens_16"
+            android:textColor="@android:color/darker_gray"
+            android:text="Fb ID : "/>
+
+        <TextView
+            android:id="@+id/u_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/id_heading"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/dimens_16"
+            android:textColor="@android:color/black"
+            android:text=""/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_margin="@dimen/dimens_20"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom"
+        android:background="@android:color/holo_blue_light"
+        android:text="Next"
+        />
+
+</LinearLayout>

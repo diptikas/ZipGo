@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ZipgoAssignment</string>
+    <string name="choose_stop">Pickup</string>
+    <string name="choose_routes">Destination</string>
+    <string name="select_route">Select Your Route</string>
+    <string name="fb_app_id">349155748754010</string>
+    <string name="info_heading">User Information</string>
+    <string name="sign_in">SignIn</string>
+    <string name="choose_route">Select Your Route</string>
+    <string name="access_token">AccessToken</string>
+</resources>

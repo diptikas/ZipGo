@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_background"
+            android:gravity="center"
+            android:padding="@dimen/dimens_5"
+            android:text="@string/choose_stop"
+            android:textSize="@dimen/dimens_16" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_background"
+            android:gravity="center"
+            android:padding="@dimen/dimens_5"
+            android:text="@string/choose_routes"
+            android:textSize="@dimen/dimens_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_50"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/spinner_pickup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:overlapAnchor="false"
+            android:dropDownSelector="@drawable/border_background"
+            android:prompt="@string/choose_stop"
+            android:padding="@dimen/dimens_5" />
+
+        <Spinner
+            android:id="@+id/spinner_destination"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:overlapAnchor="false"
+            android:dropDownSelector="@drawable/border_background"
+            android:prompt="@string/choose_routes"
+            android:gravity="center"
+            android:padding="@dimen/dimens_5" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/route_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimens_20"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
